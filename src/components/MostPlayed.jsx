@@ -30,7 +30,7 @@ function MostPlayed() {
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 lg:gap-6">
           {games.map((game, index) => (
             <div key={index} className="group rounded-3xl bg-white pb-4 text-center">
-              <img src={'/images/' + game.image} alt={game.name} className="aspect-square w-full rounded-3xl object-cover" />
+              <img src={`${import.meta.env.BASE_URL}images/${game.image}`} alt={game.name} className="aspect-square w-full rounded-3xl object-cover" />
               <span className="mt-3 block text-[13px] text-lugx-gray">{game.category}</span>
               <h4 className="mt-0.5 text-[15px] font-semibold transition-colors duration-300 group-hover:text-lugx-blue">{game.name}</h4>
               <button
