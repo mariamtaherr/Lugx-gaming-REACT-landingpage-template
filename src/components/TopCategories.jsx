@@ -23,7 +23,7 @@ function TopCategories() {
           >
             <h4 className="py-3 text-[15px] font-semibold text-white">{item.name}</h4>
             <div className="overflow-hidden rounded-3xl">
-              <img src={'/images/' + item.image} alt={item.name} className="aspect-[1/1] w-full object-cover" />
+              <img src={`${import.meta.env.BASE_URL}images/${item.image}`} alt={item.name} className="aspect-[1/1] w-full object-cover" />
             </div>
           </button>
         ))}
