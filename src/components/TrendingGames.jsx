@@ -25,7 +25,7 @@ function TrendingGames() {
         {games.map((game, index) => (
           <div key={index} className="group overflow-hidden rounded-3xl bg-[#eee]">
             <div className="relative">
-              <img src={'/images/' + game.image} alt={game.name} className="h-[200px] w-full rounded-3xl object-cover sm:h-[226px]" />
+              <img src={`${import.meta.env.BASE_URL}images/${game.image}`} alt={game.name} className="h-[200px] w-full rounded-3xl object-cover sm:h-[226px]" />
               <div className="absolute top-3 right-3 rounded-lg bg-lugx-blue px-2.5 py-1 text-center text-white">
                 {game.oldPrice !== '' && <div className="text-[11px] leading-none line-through opacity-80">{game.oldPrice}</div>}
                 <div className="text-sm font-bold">{game.price}</div>
