@@ -5,7 +5,7 @@ function Shop() {
     <section id="shop" className="mx-auto w-full max-w-[1320px] px-4 pt-20 lg:pt-28">
       <div className="relative grid items-end gap-6 lg:min-h-[586px] lg:grid-cols-[1fr_1fr] lg:gap-[19%]">
         <img
-          src="/images/shop-banner.jpg"
+          src={`${import.meta.env.BASE_URL}images/shop-banner.jpg`}
           alt="Pre-order"
           className="hidden h-[482px] w-[42%] rounded-3xl object-cover lg:absolute lg:top-0 lg:left-[28.7%] lg:block"
         />
