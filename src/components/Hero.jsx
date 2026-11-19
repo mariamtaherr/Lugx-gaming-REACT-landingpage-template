@@ -57,7 +57,7 @@ function Hero() {
 
         <div className="flex justify-center lg:justify-end">
           <div className="relative w-full max-w-[380px] lg:max-w-[400px]">
-            <img src="/images/banner-image.jpg" alt="Banner game" className="w-full rounded-3xl bg-white object-cover" />
+            <img src={`${import.meta.env.BASE_URL}images/banner-image.jpg`} alt="Banner game" className="w-full rounded-3xl bg-white object-cover" />
             <span className="absolute top-3 right-3 rounded-lg bg-lugx-blue px-3 py-1.5 text-sm font-bold text-white">$22</span>
             <span className="absolute -bottom-6 left-2 lg:-left-6 flex h-[72px] w-[72px] items-center justify-center rounded-full bg-lugx-red text-lg font-bold text-white sm:h-[84px] sm:w-[84px] sm:text-xl">
               -40%
